@@ -3,6 +3,6 @@
   
  Para rodar o projeto você precisa de configurar o path das bibliotecas do slick2d
 
-Exemplo de confiuraçao abaixo:
+Exemplo de configuração abaixo:
 
 -Djava.library.path=D:\\IFES\poo2\\chuvemonstros\\rain-of-monters\\native\\ -Dorg.lwjgl.opengl.Display.allowSoftwareOpenGL=true 
