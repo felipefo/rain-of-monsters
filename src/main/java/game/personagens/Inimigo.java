@@ -1,6 +1,10 @@
 
-package game.observer;
+package game;
 
+import game.observer.Observador;
+import game.observer.Observador;
+import game.observer.Observavel;
+import game.observer.Observavel;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**

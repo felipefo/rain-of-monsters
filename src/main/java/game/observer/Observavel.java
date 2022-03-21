@@ -14,7 +14,7 @@ public class Observavel  {
     public void addMonitores(Observador monitores) {
         this.observadores.add(monitores);
     }
-    public void noificarTodos(){
+    public void notificarTodos(){
         for(Observador ob : observadores ){
             ob.update(this);
         }

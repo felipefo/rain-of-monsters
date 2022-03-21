@@ -1,9 +1,17 @@
-package game.observer;
+
+
+
+
+
 
 /**
  *
  * @author felipe
  */
+import game.observer.ControleColisao;
+import game.Heroi;
+import game.Inimigo;
+import game.InimigoEsperto;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.newdawn.slick.AppGameContainer;
@@ -81,7 +89,7 @@ public class SimpleSlickGame extends BasicGame {
         
        
         g.drawImage(land, 0, 0);
-        g.drawString("Time : " + time/1000, 530, 20);
+        g.drawString("Time : " + time/1000 + " of 10" , 510, 20 );
         heroi.render();
         inimigo2.render();
         inimigo3.render();
@@ -92,8 +100,7 @@ public class SimpleSlickGame extends BasicGame {
             gc.pause();
             ganhouJogo.draw(200,200);
         }
-        
-        if(gc.isPaused())
+        if(gc.isPaused() && time/1000 < 10)
             gameover.draw(200,200);
     }
 
@@ -124,12 +131,12 @@ public class SimpleSlickGame extends BasicGame {
         if (input.isKeyDown(Input.KEY_RIGHT))
             this.heroi.setPosX(this.heroi.getPosX() + 2);        
         timeCount++;
-        if (timeCount == 10){ 
-            heroi.noificarTodos();                    
-            inimigo1.noificarTodos();
-            inimigo2.noificarTodos();
-            inimigo3.noificarTodos();
-            inimigoEsperto.noificarTodos();
+        if (timeCount == 20){ 
+            heroi.notificarTodos();                    
+            inimigo1.notificarTodos();
+            inimigo2.notificarTodos();
+            inimigo3.notificarTodos();
+            inimigoEsperto.notificarTodos();
             timeCount=0;
             }
         }

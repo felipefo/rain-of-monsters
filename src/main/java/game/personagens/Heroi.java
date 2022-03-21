@@ -1,7 +1,5 @@
 
-package game.observer;
-
-import game.observer.PersonagemPadrao;
+package game;
 
 /**
  *

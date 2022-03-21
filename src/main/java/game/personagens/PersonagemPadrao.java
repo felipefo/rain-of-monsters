@@ -1,10 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package game.observer;
 
+package game;
+
+import game.observer.Observavel;
+import game.observer.Observavel;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.newdawn.slick.Image;
@@ -14,7 +12,7 @@ import org.newdawn.slick.SlickException;
  *
  * @author felipe
  */
-class PersonagemPadrao extends Observavel {    
+public class PersonagemPadrao extends Observavel {    
     Image image;
     int posX;
     int posY;

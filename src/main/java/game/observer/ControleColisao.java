@@ -1,5 +1,9 @@
 package game.observer;
 
+import game.PersonagemPadrao;
+import game.Inimigo;
+import game.InimigoEsperto;
+import game.Heroi;
 import java.awt.Rectangle;
 import org.newdawn.slick.GameContainer;
 
