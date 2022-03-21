@@ -20,8 +20,7 @@ public class FabricaDeNotificacoes {
     public Image criarImagensNotificacao(String tipo) {        
  
         Image img = null;
-        //Termine a implementacao da gabrica
-
+        //Termine a implementacao da fabrica
         //use a imagem gameover.png para notificar que o usuario perdeu o jogo 
         //e use as imagem ganhou.png para notiricar que o usuario genhou o jogo
       
